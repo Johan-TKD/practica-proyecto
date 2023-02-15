@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+}
+/*header{
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    padding: 8px 12px;
+    margin: 0 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: gray;
+}
+header span{
+    display: none;
+}*/
+
+.calor{
+    background-image: url(../assent/laptop-2838921_640\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+.hambiente{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.frio{
+    margin-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    /*"titulo titulo love1 love2"
+    "titulo titulo love3 love4"*/
+    ;
+}
+.sizas{
+    margin-top: 20px;
+    width: 300px;
+    height: 120px;
+    cursor: pointer;
+}
+.gradient{
+    background-image: linear-gradient(to top, red, blue);
+}
+.cabron{
+    /*son el numero de filas que aparecen en el archivo*/
+    /*grid-area: 1/1/3/3;*/
+    /*place-self: center;*/
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /*por nombre de area*/
+    /*grid-area: titulo;*/
+
+    /*con fila y columna*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.pastas{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.palillos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-top: 80px;
+}
+.palillos img{
+    transition: 0.3s transforn ease;
+    cursor: pointer;
+}
+.palillos img:hover:nth-child(odd) {
+    transform: translate(10px, -10px);
+}
+.palillos img:hover:nth-child(even) {
+    /*horizontal y vertical*/
+    transform: translate(-10px, -10px);
+}
+.remedio{
+    text-align: center;
+}
+/*.tetillas{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}*/
+.trends-item{
+    cursor: pointer;
+    overflow: hidden;
+}
+.trends-item img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+.trends-item img:hover{
+    transform: scale(1,2);
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    margin-top: 80px;
+    font-size: 16px;
+    text-align: center;
+}
+/*estrategia movile last*/
+@media (max-width: 768px){
+    body{
+        font-size: 150%;
+    }
+    .frio{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cabron{
+        grid-column: 1/3;
+    }
+    .sizas{
+        width: 100%;
+    }
+    .palillos{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+    }
+    .palillos img:hover:nth-child(odd),
+    .palillos img:hover:nth-child(even){
+        transform: none;
+    }
+    .palillos img{
+        transition: o.3s padding ease;
+    }
+    .palillos img:active{
+        border: 1px solid black;
+        padding: 10px;
+    }
+}
+@media (max-width:530px){
+    header nav{
+        display: none;
+    }
+    header span{
+        display: inline-block;
+    }
+}
+@media (max-width: 420px){
+    body{
+        font-size: 130%;
+    }
+    .frio{
+        grid-template-columns: 1fr;
+    }
+    .cabron{
+        grid-column: 1/2;
+        text-align: center;
+    }
+    .palillos{
+        grid-template-columns: 1fr;
+    }
+}
+/*melos paa*/

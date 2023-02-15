@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>star wars</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 62.5%;
+            /*font-size: 100%;-->es igual a 16px*/
+        }
+        body{
+            background-image: linear-gradient(rgb(0,0,0), rgb(0,0,32));
+            color: yellow;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        main{
+            overflow: hidden;
+            /*definir la distancia en el eje z para dar una perspectiva en 3D*/
+            perspective: 700px;
+        }
+        section{
+            font-size: 5rem;/*serian 50px*/
+            height: 100vh;
+            width: 60%;
+            margin: 0 auto;
+            /*transform: rotateX(45deg);*/
+            animation: intro 30s lineal forwards;
+        }
+        @keyframes intro{
+            from{
+                transform: rotateX(45deg) translateY(700px);
+            }
+            to{
+                transform: rotateX(45deg) translateY(-3000px);
+            }
+        }
+        section h1, section p{
+            margin-bottom: 5rem;
+        }
+        section h1{
+            text-align: center;
+        }
+        section p{
+            text-align: justify;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Episodio IV: una nueva esperanza</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam eaque dolorem accusantium necessitatibus non amet dolores, cum, qui, beatae labore harum voluptatem soluta fugit unde ab animi quaerat dignissimos. Nisi.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem optio possimus excepturi magnam aut sequi! Non itaque aut sed repudiandae quaerat asperiores facilis! Magni dolorum reiciendis repudiandae. Vero, vel rem.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed explicabo maiores harum rerum ipsum tempore, voluptatem voluptatibus odit quisquam, dolorem incidunt debitis accusamus voluptates reprehenderit ipsa amet expedita tempora in?
+            </p>
+        </section>
+    </main>
+</body>
+</html>
